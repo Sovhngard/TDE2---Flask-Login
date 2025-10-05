@@ -1,0 +1,8 @@
+<h2>Sensores cadastrados</h2>
+<ul>
+    {% for nome, tipo in devices.items() %}
+        <li>{{ nome }} - {{ tipo }}</li>
+    {% endfor %}
+</ul>
+
+<p><a href="{{ url_for('login.home') }}">Voltar para a homepage</a></p>

@@ -1,0 +1,8 @@
+<h2>Atuadores cadastrados</h2>
+<ul>
+    {% for nome, valor in devices.items() %}
+        <li>{{ nome }}: {{ valor }}</li>
+    {% endfor %}
+</ul>
+
+<p><a href="{{ url_for('login.home') }}">Voltar para a homepage</a></p>

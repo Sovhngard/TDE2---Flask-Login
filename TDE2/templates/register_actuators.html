@@ -1,0 +1,11 @@
+<h2>Registrar novo atuador</h2>
+<form action="{{ url_for('actuators.add_actuators') }}" method="post">
+    <p>Nome do atuador:</p>
+    <input type="text" name="actuator_name" required>
+
+    <p>Tipo do atuador:</p>
+    <input type="text" name="actuator_type" required>
+
+    <p><input type="submit" value="Cadastrar Atuador"></p>
+</form>
+<p><a href="{{ url_for('login.home') }}">Voltar para a homepage</a></p>

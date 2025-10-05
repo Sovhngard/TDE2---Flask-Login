@@ -1,0 +1,9 @@
+<form action="{{ url_for('login.del_user') }}" method="post">
+    <select name="user">
+        {% for key in devices.keys() %}
+            <option value="{{ key }}">{{ key }}</option>
+        {% endfor %}
+    </select>
+    <input type="submit" value="Deletar">
+</form>
+<p><a href="{{ url_for('login.home') }}">Voltar para a homepage</a></p>

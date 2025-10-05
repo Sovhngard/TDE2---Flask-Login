@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block content %}
+<ul>
+    <li><a href="{{ url_for('login.register_user') }}">Cadastrar Usuários</a></li>
+    <li><a href="{{ url_for('sensors.register_sensors') }}">Cadastrar Sensores</a></li>
+    <li><a href="{{ url_for('actuators.register_actuators') }}">Cadastrar Atuadores</a></li>
+    <li><a href="{{ url_for('login.list_users') }}">Listar Usuários</a></li>
+    <li><a href="{{ url_for('sensors.list_sensors') }}">Listar Sensores</a></li>
+    <li><a href="{{ url_for('actuators.list_actuators') }}">Listar Atuadores</a></li>
+    <li><a href="{{ url_for('login.remove_user') }}">Remover Usuário</a></li>
+    <li><a href="{{ url_for('sensors.remove_sensors') }}">Remover Sensor</a></li>
+    <li><a href="{{ url_for('actuators.remove_actuators') }}">Remover Atuador</a></li>
+    <p><a href="{{ url_for('login.logout') }}">Sair</a></p>
+</ul>
+{% endblock %}

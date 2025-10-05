@@ -1,0 +1,11 @@
+<h2>Registrar sensor</h2>
+<form action="{{ url_for('sensors.add_sensors') }}" method="post">
+    <p>Nome do sensor:</p>
+    <input type="text" name="sensor_name" required>
+
+    <p>Tipo do sensor:</p>
+    <input type="text" name="sensor_type" required>
+
+    <p><input type="submit" value="Cadastrar Sensor"></p>
+</form>
+<p><a href="{{ url_for('login.home') }}">Voltar para a homepage</a></p>

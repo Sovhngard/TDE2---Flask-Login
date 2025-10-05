@@ -1,0 +1,10 @@
+<h2>Remover atuador</h2>
+<form action="{{ url_for('actuators.del_actuator') }}" method="post">
+    <select name="actuator_name" class="Input">
+        {% for key in devices.keys() %}
+            <option value="{{ key }}">{{ key }}</option>
+        {% endfor %}
+    </select>
+    <p><input type="submit" value="Deletar" /></p>
+</form>
+<p><a href="{{ url_for('login.home') }}">Voltar para a homepage</a></p>

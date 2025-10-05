@@ -1,0 +1,8 @@
+<h2>Usuários Cadastrados</h2>
+<ul>
+    {% for nome, senha in devices.items() %}
+        <li>{{ nome }} - {{ senha }}</li>
+    {% endfor %}
+</ul>
+
+<p><a href="{{ url_for('login.home') }}">Voltar para a homepage</a></p>
